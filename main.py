@@ -19,6 +19,7 @@ def main():
         player.draw(screen)
         pygame.display.flip()
         dt = clock.tick(60)/1000
+        player.update(dt)
     print("Starting Asteroids!")
     print(f"Screen width: {SCREEN_WIDTH} \nScreen height: {SCREEN_HEIGHT}")
 
